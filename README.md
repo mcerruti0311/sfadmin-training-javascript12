@@ -46,84 +46,94 @@ Separating style from content in this way brings with it a lot of benefits:
 #### CSS Style Declarations
 The syntax of CSS style declarations is not unlike that of JavaScript functions. Suppose you want to declare a style for all paragraph elements in a page, causing the font color inside the paragraphs to be colored red:
 
-### Tip
-
-> Styles defined in external stylesheets have the advantage that they can easily be applied to multiple pages, whereas styles defined within the page can’t.
-
-### Note
-
-In addition to the syntax
-
-myNode.style.width
-
-you can also use the equivalent
-
-myNode.style["width"]
-
-This is sometimes necessary, such as when passing a property name as a variable:
-
-var myProperty = "width";
-myNode.style[myProperty] = "200px";
-
+```CSS
 p {
     color: red
 }
-
+```
 You can apply more than one style rule to your chosen element or collection of elements, separating them with semicolons:
 
+```CSS
 p {
     color: red;
     text-decoration: italic;
 }
+```
 
-Since you have used the selector p, the preceding style declarations affect every paragraph element on the page. To select just one specific page element, you can do so by using its ID. To do so, the selector you use for your CSS style declaration is not the name of the HTML element, but the ID value prefixed by a hash character. For instance, the HTML element
+Since you have used the selector `p`, the preceding style declarations affect every paragraph element on the page. To select just one specific page element, you can do so by using its ID. To do so, the selector you use for your CSS style declaration is not the name of the HTML element, but the ID value prefixed by a hash character. For instance, the HTML element
 
-Note
-
-In Hour 13, “Introducing CSS3,” you’ll read about another way to access style properties in JavaScript that avoids the limitation of only working for inline styles.
-
-Note
-
-CSS contains many properties with names that contain hyphens, such as background-color, font-size, text-align, and so on. Since the hyphen is not allowed in JavaScript property and method names, we need to amend the way these properties are written. To access such a property in JavaScript, remove the hyphen from the property name and capitalize the character that follows, so font-size becomes fontSize, text-align becomes textAlign, and so on.
-
-<p id="para1">Here is some text.</p>
+`<p id="para1">Here is some text.</p>`
 
 could be styled by the following style declaration:
 
+```CSS
 #para1 {
     font-weight: bold;
     font-size: 12pt;
     color: black;
 }
+```
+To style multiple page elements using the same style declaration, you can simply separate the selectors with commas. The following style declaration affects all `<div>` elements on the page, plus whatever element has the id value para1:
 
-To style multiple page elements using the same style declaration, you can simply separate the selectors with commas. The following style declaration affects all <div> elements on the page, plus whatever element has the id value para1:
-
+```CSS
 div, #para1 {
     color: yellow;
     background-color: black;
 }
+```
 
 Alternatively, you can select all elements sharing a particular class attribute, by prefixing the class name with a dot to form your selector:
 
+```CSS
 <p class="info">Welcome to my website.</p>
-<span class="info">Please log in or register using the form below.</span>
+<span class="info">Please log in or register using the form
+below.</span>
+```
 
 We can style these elements with one declaration:
 
+```CSS
 .info {
     font-family: arial, verdana, sans-serif;
     color: green;
 }
+```
+#### Tip
 
-Where to Place Style Declarations
+> Styles defined in external stylesheets have the advantage that they can easily be applied to multiple pages, whereas styles defined within the page can’t.
+
+#### Note
+
+> In addition to the syntax
+> `myNode.style.width`
+> you can also use the equivalent
+> `myNode.style["width"]`
+> This is sometimes necessary, such as when passing a
+> property name as a variable:
+> ```JavaScript
+var myProperty = "width";
+myNode.style[myProperty] = "200px";
+```
+
+#### Note
+
+> In Hour 13, “Introducing CSS3,” you’ll read about another way to access style properties in JavaScript that avoids the limitation of only working for inline styles.
+
+#### Note
+
+> CSS contains many properties with names that contain hyphens, such as background-color, font-size, text-align, and so on. Since the hyphen is not allowed in JavaScript property and method names, we need to amend the way these properties are written. To access such a property in JavaScript, remove the hyphen from the property name and capitalize the character that follows, so font-size becomes fontSize, text-align becomes textAlign, and so on.
+
+#### Where to Place Style Declarations
 Somewhat similarly to JavaScript statements, CSS style declarations can either appear within the page or be saved in an external file and referenced from within the HTML page.
 
-To reference an external stylesheet, normal practice is to add a line to the page <head> like this:
+To reference an external stylesheet, normal practice is to add a line to the page `<head>` like this:
 
+```HTML
 <link rel="stylesheet" type="text/css" href="style.css" />
+```
+Alternatively, you can place style declarations directly in the `<head>` of your page between `<style>` and `</style>` tags:
 
-Alternatively, you can place style declarations directly in the <head> of your page between <style> and </style> tags:
-
+```CSS
 <style>
     p {
         color: black;
@@ -134,33 +144,34 @@ Alternatively, you can place style declarations directly in the <head> of your p
         font-size: 22pt;
     }
 </style>
+```
 
 Finally, it’s possible to add style declarations directly into an HTML element by using the style attribute:
 
-<p style="color:red; font-size: 12px;">Please see our terms of service.</p>
+`<p style="color:red; font-size: 12px;">Please see our terms of service.</p>`
 
-The DOM style Property
+### The DOM style Property
 You saw in previous hours how the HTML page is represented by the browser as a DOM tree. The DOM nodes—individual “leaves and branches” making up the DOM tree—are objects, each having its own properties and methods.
 
-You’ve seen various methods that allow you to select individual DOM nodes, or collections of nodes, such as document.getElementById().
+You’ve seen various methods that allow you to select individual DOM nodes, or collections of nodes, such as `document.getElementById()`.
 
 Each DOM node has a property called style, which is itself an object containing information about the CSS styles pertaining to its parent node. Let’s see an example:
 
+```HTML
 <div id="id1" style="width:200px;">Welcome back to my site.</div>
 <script>
     var myNode = document.getElementById("id1");
     alert(myNode.style.width);
 </script>
+```
 
 In this case the alert would display the message “200px.”
 
-Unfortunately, while this method works fine with inline styles, if you apply a style to a page element via a <style> element in the head of your page, or in an external stylesheet, the DOM style object won’t be able to access it.
+Unfortunately, while this method works fine with inline styles, if you apply a style to a page element via a `<style>` element in the head of your page, or in an external stylesheet, the DOM style object won’t be able to access it.
 
 The DOM style object, though, is not read-only; you can set the values of style properties using the style object, and properties you’ve set this way will be returned by the DOM style object.
 
-Try It Yourself: Setting Style Properties
-
-Video 12.1—Setting Style Properties
+#### Try It Yourself: Setting Style Properties
 
 Let’s write a function to toggle the background color and font color of a page element between two values, using the DOM style object:
 
