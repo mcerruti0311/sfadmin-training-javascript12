@@ -190,31 +190,22 @@ The function toggle() first finds out the current background-color CSS property 
 
 If the background-color property currently has the value of red, it sets the style properties of the element to show the text in black on a yellow background; otherwise, it sets the style values to show white text on a red background.
 
-We use this function to toggle the colors of a <span> element in an HTML document.
-
-The complete listing is shown in Listing 12.1.
-
-
-
-LISTING 12.1 Styling Using the DOM style Object
-
-
+We use this function to toggle the colors of a `<span>` element in an HTML document.
 
 Create the HTML file in your editor and try it out.
 
-You should see that when the page originally loads, the text is in the default black and has no background color. That happens because these style properties are initially not set in the <style> instructions in the page head, as an inline style, or via the DOM.
+You should see that when the page originally loads, the text is in the default black and has no background color. That happens because these style properties are initially not set in the `<style>` instructions in the page head, as an inline style, or via the DOM.
 
-Executing when the button is clicked, the toggle() function checks the current background color of the <span> element. On finding that its value is not currently red, toggle() sets the background color to red and the text color to white.
+Executing when the button is clicked, the toggle() function checks the current background color of the `<span>` element. On finding that its value is not currently red, toggle() sets the background color to red and the text color to white.
 
 The next time the button is clicked, the test condition
 
-if(myElement.style.backgroundColor == 'red')
+`if(myElement.style.backgroundColor == 'red')`
 
 returns a value of true, causing the colors to be set instead to black on a yellow background.
 
-Figure 12.1 shows the program in action.
+![12fig01.jpg](12fig01.jpg)
 
-Image
 FIGURE 12.1 Setting style properties in JavaScript
 
 Accessing Classes Using className

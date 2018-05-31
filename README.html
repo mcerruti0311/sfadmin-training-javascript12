@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="utf-8" />
+      <title>README</title>
+      <style>.markdown-preview:not([data-use-github-style]) { padding: 2em; font-size: 1.2em; color: rgb(171, 178, 191); background-color: rgb(40, 44, 52); overflow: auto; }
+.markdown-preview:not([data-use-github-style]) > :first-child { margin-top: 0px; }
+.markdown-preview:not([data-use-github-style]) h1, .markdown-preview:not([data-use-github-style]) h2, .markdown-preview:not([data-use-github-style]) h3, .markdown-preview:not([data-use-github-style]) h4, .markdown-preview:not([data-use-github-style]) h5, .markdown-preview:not([data-use-github-style]) h6 { line-height: 1.2; margin-top: 1.5em; margin-bottom: 0.5em; color: rgb(255, 255, 255); }
+.markdown-preview:not([data-use-github-style]) h1 { font-size: 2.4em; font-weight: 300; }
+.markdown-preview:not([data-use-github-style]) h2 { font-size: 1.8em; font-weight: 400; }
+.markdown-preview:not([data-use-github-style]) h3 { font-size: 1.5em; font-weight: 500; }
+.markdown-preview:not([data-use-github-style]) h4 { font-size: 1.2em; font-weight: 600; }
+.markdown-preview:not([data-use-github-style]) h5 { font-size: 1.1em; font-weight: 600; }
+.markdown-preview:not([data-use-github-style]) h6 { font-size: 1em; font-weight: 600; }
+.markdown-preview:not([data-use-github-style]) strong { color: rgb(255, 255, 255); }
+.markdown-preview:not([data-use-github-style]) del { color: rgb(124, 135, 156); }
+.markdown-preview:not([data-use-github-style]) a, .markdown-preview:not([data-use-github-style]) a code { color: rgb(82, 139, 255); }
+.markdown-preview:not([data-use-github-style]) img { max-width: 100%; }
+.markdown-preview:not([data-use-github-style]) > p { margin-top: 0px; margin-bottom: 1.5em; }
+.markdown-preview:not([data-use-github-style]) > ul, .markdown-preview:not([data-use-github-style]) > ol { margin-bottom: 1.5em; }
+.markdown-preview:not([data-use-github-style]) blockquote { margin: 1.5em 0px; font-size: inherit; color: rgb(124, 135, 156); border-color: rgb(75, 83, 98); border-width: 4px; }
+.markdown-preview:not([data-use-github-style]) hr { margin: 3em 0px; border-top: 2px dashed rgb(75, 83, 98); background: none; }
+.markdown-preview:not([data-use-github-style]) table { margin: 1.5em 0px; }
+.markdown-preview:not([data-use-github-style]) th { color: rgb(255, 255, 255); }
+.markdown-preview:not([data-use-github-style]) th, .markdown-preview:not([data-use-github-style]) td { padding: 0.66em 1em; border: 1px solid rgb(75, 83, 98); }
+.markdown-preview:not([data-use-github-style]) code { color: rgb(255, 255, 255); background-color: rgb(58, 63, 75); }
+.markdown-preview:not([data-use-github-style]) pre.editor-colors { margin: 1.5em 0px; padding: 1em; font-size: 0.92em; border-radius: 3px; background-color: rgb(49, 54, 63); }
+.markdown-preview:not([data-use-github-style]) kbd { color: rgb(255, 255, 255); border-width: 1px 1px 2px; border-style: solid; border-color: rgb(75, 83, 98) rgb(75, 83, 98) rgb(62, 68, 81); border-image: initial; background-color: rgb(58, 63, 75); }
+.markdown-preview[data-use-github-style] { font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif; line-height: 1.6; word-wrap: break-word; padding: 30px; font-size: 16px; color: rgb(51, 51, 51); background-color: rgb(255, 255, 255); overflow: scroll; }
+.markdown-preview[data-use-github-style] > :first-child { margin-top: 0px !important; }
+.markdown-preview[data-use-github-style] > :last-child { margin-bottom: 0px !important; }
+.markdown-preview[data-use-github-style] a:not([href]) { color: inherit; text-decoration: none; }
+.markdown-preview[data-use-github-style] .absent { color: rgb(204, 0, 0); }
+.markdown-preview[data-use-github-style] .anchor { position: absolute; top: 0px; left: 0px; display: block; padding-right: 6px; padding-left: 30px; margin-left: -30px; }
+.markdown-preview[data-use-github-style] .anchor:focus { outline: none; }
+.markdown-preview[data-use-github-style] h1, .markdown-preview[data-use-github-style] h2, .markdown-preview[data-use-github-style] h3, .markdown-preview[data-use-github-style] h4, .markdown-preview[data-use-github-style] h5, .markdown-preview[data-use-github-style] h6 { position: relative; margin-top: 1em; margin-bottom: 16px; font-weight: bold; line-height: 1.4; }
+.markdown-preview[data-use-github-style] h1 .octicon-link, .markdown-preview[data-use-github-style] h2 .octicon-link, .markdown-preview[data-use-github-style] h3 .octicon-link, .markdown-preview[data-use-github-style] h4 .octicon-link, .markdown-preview[data-use-github-style] h5 .octicon-link, .markdown-preview[data-use-github-style] h6 .octicon-link { display: none; color: rgb(0, 0, 0); vertical-align: middle; }
+.markdown-preview[data-use-github-style] h1:hover .anchor, .markdown-preview[data-use-github-style] h2:hover .anchor, .markdown-preview[data-use-github-style] h3:hover .anchor, .markdown-preview[data-use-github-style] h4:hover .anchor, .markdown-preview[data-use-github-style] h5:hover .anchor, .markdown-preview[data-use-github-style] h6:hover .anchor { padding-left: 8px; margin-left: -30px; text-decoration: none; }
+.markdown-preview[data-use-github-style] h1:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h2:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h3:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h4:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h5:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h6:hover .anchor .octicon-link { display: inline-block; }
+.markdown-preview[data-use-github-style] h1 tt, .markdown-preview[data-use-github-style] h2 tt, .markdown-preview[data-use-github-style] h3 tt, .markdown-preview[data-use-github-style] h4 tt, .markdown-preview[data-use-github-style] h5 tt, .markdown-preview[data-use-github-style] h6 tt, .markdown-preview[data-use-github-style] h1 code, .markdown-preview[data-use-github-style] h2 code, .markdown-preview[data-use-github-style] h3 code, .markdown-preview[data-use-github-style] h4 code, .markdown-preview[data-use-github-style] h5 code, .markdown-preview[data-use-github-style] h6 code { font-size: inherit; }
+.markdown-preview[data-use-github-style] h1 { padding-bottom: 0.3em; font-size: 2.25em; line-height: 1.2; border-bottom: 1px solid rgb(238, 238, 238); }
+.markdown-preview[data-use-github-style] h1 .anchor { line-height: 1; }
+.markdown-preview[data-use-github-style] h2 { padding-bottom: 0.3em; font-size: 1.75em; line-height: 1.225; border-bottom: 1px solid rgb(238, 238, 238); }
+.markdown-preview[data-use-github-style] h2 .anchor { line-height: 1; }
+.markdown-preview[data-use-github-style] h3 { font-size: 1.5em; line-height: 1.43; }
+.markdown-preview[data-use-github-style] h3 .anchor { line-height: 1.2; }
+.markdown-preview[data-use-github-style] h4 { font-size: 1.25em; }
+.markdown-preview[data-use-github-style] h4 .anchor { line-height: 1.2; }
+.markdown-preview[data-use-github-style] h5 { font-size: 1em; }
+.markdown-preview[data-use-github-style] h5 .anchor { line-height: 1.1; }
+.markdown-preview[data-use-github-style] h6 { font-size: 1em; color: rgb(119, 119, 119); }
+.markdown-preview[data-use-github-style] h6 .anchor { line-height: 1.1; }
+.markdown-preview[data-use-github-style] p, .markdown-preview[data-use-github-style] blockquote, .markdown-preview[data-use-github-style] ul, .markdown-preview[data-use-github-style] ol, .markdown-preview[data-use-github-style] dl, .markdown-preview[data-use-github-style] table, .markdown-preview[data-use-github-style] pre { margin-top: 0px; margin-bottom: 16px; }
+.markdown-preview[data-use-github-style] hr { height: 4px; padding: 0px; margin: 16px 0px; background-color: rgb(231, 231, 231); border: 0px none; }
+.markdown-preview[data-use-github-style] ul, .markdown-preview[data-use-github-style] ol { padding-left: 2em; }
+.markdown-preview[data-use-github-style] ul.no-list, .markdown-preview[data-use-github-style] ol.no-list { padding: 0px; list-style-type: none; }
+.markdown-preview[data-use-github-style] ul ul, .markdown-preview[data-use-github-style] ul ol, .markdown-preview[data-use-github-style] ol ol, .markdown-preview[data-use-github-style] ol ul { margin-top: 0px; margin-bottom: 0px; }
+.markdown-preview[data-use-github-style] li > p { margin-top: 16px; }
+.markdown-preview[data-use-github-style] dl { padding: 0px; }
+.markdown-preview[data-use-github-style] dl dt { padding: 0px; margin-top: 16px; font-size: 1em; font-style: italic; font-weight: bold; }
+.markdown-preview[data-use-github-style] dl dd { padding: 0px 16px; margin-bottom: 16px; }
+.markdown-preview[data-use-github-style] blockquote { padding: 0px 15px; color: rgb(119, 119, 119); border-left: 4px solid rgb(221, 221, 221); }
+.markdown-preview[data-use-github-style] blockquote > :first-child { margin-top: 0px; }
+.markdown-preview[data-use-github-style] blockquote > :last-child { margin-bottom: 0px; }
+.markdown-preview[data-use-github-style] table { display: block; width: 100%; overflow: auto; word-break: keep-all; }
+.markdown-preview[data-use-github-style] table th { font-weight: bold; }
+.markdown-preview[data-use-github-style] table th, .markdown-preview[data-use-github-style] table td { padding: 6px 13px; border: 1px solid rgb(221, 221, 221); }
+.markdown-preview[data-use-github-style] table tr { background-color: rgb(255, 255, 255); border-top: 1px solid rgb(204, 204, 204); }
+.markdown-preview[data-use-github-style] table tr:nth-child(2n) { background-color: rgb(248, 248, 248); }
+.markdown-preview[data-use-github-style] img { max-width: 100%; box-sizing: border-box; }
+.markdown-preview[data-use-github-style] .emoji { max-width: none; }
+.markdown-preview[data-use-github-style] span.frame { display: block; overflow: hidden; }
+.markdown-preview[data-use-github-style] span.frame > span { display: block; float: left; width: auto; padding: 7px; margin: 13px 0px 0px; overflow: hidden; border: 1px solid rgb(221, 221, 221); }
+.markdown-preview[data-use-github-style] span.frame span img { display: block; float: left; }
+.markdown-preview[data-use-github-style] span.frame span span { display: block; padding: 5px 0px 0px; clear: both; color: rgb(51, 51, 51); }
+.markdown-preview[data-use-github-style] span.align-center { display: block; overflow: hidden; clear: both; }
+.markdown-preview[data-use-github-style] span.align-center > span { display: block; margin: 13px auto 0px; overflow: hidden; text-align: center; }
+.markdown-preview[data-use-github-style] span.align-center span img { margin: 0px auto; text-align: center; }
+.markdown-preview[data-use-github-style] span.align-right { display: block; overflow: hidden; clear: both; }
+.markdown-preview[data-use-github-style] span.align-right > span { display: block; margin: 13px 0px 0px; overflow: hidden; text-align: right; }
+.markdown-preview[data-use-github-style] span.align-right span img { margin: 0px; text-align: right; }
+.markdown-preview[data-use-github-style] span.float-left { display: block; float: left; margin-right: 13px; overflow: hidden; }
+.markdown-preview[data-use-github-style] span.float-left span { margin: 13px 0px 0px; }
+.markdown-preview[data-use-github-style] span.float-right { display: block; float: right; margin-left: 13px; overflow: hidden; }
+.markdown-preview[data-use-github-style] span.float-right > span { display: block; margin: 13px auto 0px; overflow: hidden; text-align: right; }
+.markdown-preview[data-use-github-style] code, .markdown-preview[data-use-github-style] tt { padding: 0.2em 0px; margin: 0px; font-size: 85%; background-color: rgba(0, 0, 0, 0.04); border-radius: 3px; }
+.markdown-preview[data-use-github-style] code::before, .markdown-preview[data-use-github-style] tt::before, .markdown-preview[data-use-github-style] code::after, .markdown-preview[data-use-github-style] tt::after { letter-spacing: -0.2em; content: " "; }
+.markdown-preview[data-use-github-style] code br, .markdown-preview[data-use-github-style] tt br { display: none; }
+.markdown-preview[data-use-github-style] del code { text-decoration: inherit; }
+.markdown-preview[data-use-github-style] pre > code { padding: 0px; margin: 0px; font-size: 100%; word-break: normal; white-space: pre; background: transparent; border: 0px; }
+.markdown-preview[data-use-github-style] .highlight { margin-bottom: 16px; }
+.markdown-preview[data-use-github-style] .highlight pre, .markdown-preview[data-use-github-style] pre { padding: 16px; overflow: auto; font-size: 85%; line-height: 1.45; background-color: rgb(247, 247, 247); border-radius: 3px; }
+.markdown-preview[data-use-github-style] .highlight pre { margin-bottom: 0px; word-break: normal; }
+.markdown-preview[data-use-github-style] pre { word-wrap: normal; }
+.markdown-preview[data-use-github-style] pre code, .markdown-preview[data-use-github-style] pre tt { display: inline; max-width: initial; padding: 0px; margin: 0px; overflow: initial; line-height: inherit; word-wrap: normal; background-color: transparent; border: 0px; }
+.markdown-preview[data-use-github-style] pre code::before, .markdown-preview[data-use-github-style] pre tt::before, .markdown-preview[data-use-github-style] pre code::after, .markdown-preview[data-use-github-style] pre tt::after { content: normal; }
+.markdown-preview[data-use-github-style] kbd { display: inline-block; padding: 3px 5px; font-size: 11px; line-height: 10px; color: rgb(85, 85, 85); vertical-align: middle; background-color: rgb(252, 252, 252); border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(204, 204, 204) rgb(187, 187, 187); border-image: initial; border-radius: 3px; box-shadow: rgb(187, 187, 187) 0px -1px 0px inset; }
+.markdown-preview[data-use-github-style] a { color: rgb(51, 122, 183); }
+.markdown-preview[data-use-github-style] code { color: inherit; }
+.markdown-preview[data-use-github-style] pre.editor-colors { padding: 0.8em 1em; margin-bottom: 1em; font-size: 0.85em; border-radius: 4px; overflow: auto; }
+.scrollbars-visible-always .markdown-preview pre.editor-colors .vertical-scrollbar, .scrollbars-visible-always .markdown-preview pre.editor-colors .horizontal-scrollbar { visibility: hidden; }
+.scrollbars-visible-always .markdown-preview pre.editor-colors:hover .vertical-scrollbar, .scrollbars-visible-always .markdown-preview pre.editor-colors:hover .horizontal-scrollbar { visibility: visible; }
+.markdown-preview .task-list-item-checkbox { position: absolute; margin: 0.25em 0px 0px -1.4em; }
+.bracket-matcher .region {
+  border-bottom: 1px dotted lime;
+  position: absolute;
+}
+.line-number.bracket-matcher.bracket-matcher {
+  color: #abb2bf;
+  background-color: #3a3f4b;
+}
+
+.spell-check-misspelling .region {
+  border-bottom: 2px dotted rgba(255, 51, 51, 0.75);
+}
+.spell-check-corrections {
+  width: 25em !important;
+}
+
+pre.editor-colors {
+  background-color: #282c34;
+  color: #abb2bf;
+}
+pre.editor-colors .line.cursor-line {
+  background-color: rgba(153, 187, 255, 0.04);
+}
+pre.editor-colors .invisible {
+  color: #abb2bf;
+}
+pre.editor-colors .cursor {
+  border-left: 2px solid #528bff;
+}
+pre.editor-colors .selection .region {
+  background-color: #3e4451;
+}
+pre.editor-colors .bracket-matcher .region {
+  border-bottom: 1px solid #528bff;
+  box-sizing: border-box;
+}
+pre.editor-colors .invisible-character {
+  color: rgba(171, 178, 191, 0.15);
+}
+pre.editor-colors .indent-guide {
+  color: rgba(171, 178, 191, 0.15);
+}
+pre.editor-colors .wrap-guide {
+  background-color: rgba(171, 178, 191, 0.15);
+}
+pre.editor-colors .find-result .region.region.region,
+pre.editor-colors .current-result .region.region.region {
+  border-radius: 2px;
+  background-color: rgba(82, 139, 255, 0.24);
+  transition: border-color 0.4s;
+}
+pre.editor-colors .find-result .region.region.region {
+  border: 2px solid transparent;
+}
+pre.editor-colors .current-result .region.region.region {
+  border: 2px solid #528bff;
+  transition-duration: .1s;
+}
+pre.editor-colors .gutter .line-number {
+  color: #636d83;
+  -webkit-font-smoothing: antialiased;
+}
+pre.editor-colors .gutter .line-number.cursor-line {
+  color: #abb2bf;
+  background-color: #3a3f4b;
+}
+pre.editor-colors .gutter .line-number.cursor-line-no-selection {
+  background-color: transparent;
+}
+pre.editor-colors .gutter .line-number .icon-right {
+  color: #abb2bf;
+}
+pre.editor-colors .gutter:not(.git-diff-icon) .line-number.git-line-removed.git-line-removed::before {
+  bottom: -3px;
+}
+pre.editor-colors .gutter:not(.git-diff-icon) .line-number.git-line-removed::after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  width: 25px;
+  border-bottom: 1px dotted rgba(224, 82, 82, 0.5);
+  pointer-events: none;
+}
+pre.editor-colors .gutter .line-number.folded,
+pre.editor-colors .gutter .line-number:after,
+pre.editor-colors .fold-marker:after {
+  color: #abb2bf;
+}
+.syntax--comment {
+  color: #5c6370;
+  font-style: italic;
+}
+.syntax--comment .syntax--markup.syntax--link {
+  color: #5c6370;
+}
+.syntax--entity.syntax--name.syntax--type {
+  color: #e5c07b;
+}
+.syntax--entity.syntax--other.syntax--inherited-class {
+  color: #98c379;
+}
+.syntax--keyword {
+  color: #c678dd;
+}
+.syntax--keyword.syntax--control {
+  color: #c678dd;
+}
+.syntax--keyword.syntax--operator {
+  color: #abb2bf;
+}
+.syntax--keyword.syntax--other.syntax--special-method {
+  color: #61afef;
+}
+.syntax--keyword.syntax--other.syntax--unit {
+  color: #d19a66;
+}
+.syntax--storage {
+  color: #c678dd;
+}
+.syntax--storage.syntax--type.syntax--annotation,
+.syntax--storage.syntax--type.syntax--primitive {
+  color: #c678dd;
+}
+.syntax--storage.syntax--modifier.syntax--package,
+.syntax--storage.syntax--modifier.syntax--import {
+  color: #abb2bf;
+}
+.syntax--constant {
+  color: #d19a66;
+}
+.syntax--constant.syntax--variable {
+  color: #d19a66;
+}
+.syntax--constant.syntax--character.syntax--escape {
+  color: #56b6c2;
+}
+.syntax--constant.syntax--numeric {
+  color: #d19a66;
+}
+.syntax--constant.syntax--other.syntax--color {
+  color: #56b6c2;
+}
+.syntax--constant.syntax--other.syntax--symbol {
+  color: #56b6c2;
+}
+.syntax--variable {
+  color: #e06c75;
+}
+.syntax--variable.syntax--interpolation {
+  color: #be5046;
+}
+.syntax--variable.syntax--parameter {
+  color: #abb2bf;
+}
+.syntax--string {
+  color: #98c379;
+}
+.syntax--string.syntax--regexp {
+  color: #56b6c2;
+}
+.syntax--string.syntax--regexp .syntax--source.syntax--ruby.syntax--embedded {
+  color: #e5c07b;
+}
+.syntax--string.syntax--other.syntax--link {
+  color: #e06c75;
+}
+.syntax--punctuation.syntax--definition.syntax--comment {
+  color: #5c6370;
+}
+.syntax--punctuation.syntax--definition.syntax--method-parameters,
+.syntax--punctuation.syntax--definition.syntax--function-parameters,
+.syntax--punctuation.syntax--definition.syntax--parameters,
+.syntax--punctuation.syntax--definition.syntax--separator,
+.syntax--punctuation.syntax--definition.syntax--seperator,
+.syntax--punctuation.syntax--definition.syntax--array {
+  color: #abb2bf;
+}
+.syntax--punctuation.syntax--definition.syntax--heading,
+.syntax--punctuation.syntax--definition.syntax--identity {
+  color: #61afef;
+}
+.syntax--punctuation.syntax--definition.syntax--bold {
+  color: #e5c07b;
+  font-weight: bold;
+}
+.syntax--punctuation.syntax--definition.syntax--italic {
+  color: #c678dd;
+  font-style: italic;
+}
+.syntax--punctuation.syntax--section.syntax--embedded {
+  color: #be5046;
+}
+.syntax--punctuation.syntax--section.syntax--method,
+.syntax--punctuation.syntax--section.syntax--class,
+.syntax--punctuation.syntax--section.syntax--inner-class {
+  color: #abb2bf;
+}
+.syntax--support.syntax--class {
+  color: #e5c07b;
+}
+.syntax--support.syntax--type {
+  color: #56b6c2;
+}
+.syntax--support.syntax--function {
+  color: #56b6c2;
+}
+.syntax--support.syntax--function.syntax--any-method {
+  color: #61afef;
+}
+.syntax--entity.syntax--name.syntax--function {
+  color: #61afef;
+}
+.syntax--entity.syntax--name.syntax--class,
+.syntax--entity.syntax--name.syntax--type.syntax--class {
+  color: #e5c07b;
+}
+.syntax--entity.syntax--name.syntax--section {
+  color: #61afef;
+}
+.syntax--entity.syntax--name.syntax--tag {
+  color: #e06c75;
+}
+.syntax--entity.syntax--other.syntax--attribute-name {
+  color: #d19a66;
+}
+.syntax--entity.syntax--other.syntax--attribute-name.syntax--id {
+  color: #61afef;
+}
+.syntax--meta.syntax--class {
+  color: #e5c07b;
+}
+.syntax--meta.syntax--class.syntax--body {
+  color: #abb2bf;
+}
+.syntax--meta.syntax--method-call,
+.syntax--meta.syntax--method {
+  color: #abb2bf;
+}
+.syntax--meta.syntax--definition.syntax--variable {
+  color: #e06c75;
+}
+.syntax--meta.syntax--link {
+  color: #d19a66;
+}
+.syntax--meta.syntax--require {
+  color: #61afef;
+}
+.syntax--meta.syntax--selector {
+  color: #c678dd;
+}
+.syntax--meta.syntax--separator {
+  color: #abb2bf;
+}
+.syntax--meta.syntax--tag {
+  color: #abb2bf;
+}
+.syntax--underline {
+  text-decoration: underline;
+}
+.syntax--none {
+  color: #abb2bf;
+}
+.syntax--invalid.syntax--deprecated {
+  color: #523d14 !important;
+  background-color: #e0c285 !important;
+}
+.syntax--invalid.syntax--illegal {
+  color: white !important;
+  background-color: #e05252 !important;
+}
+.syntax--markup.syntax--bold {
+  color: #d19a66;
+  font-weight: bold;
+}
+.syntax--markup.syntax--changed {
+  color: #c678dd;
+}
+.syntax--markup.syntax--deleted {
+  color: #e06c75;
+}
+.syntax--markup.syntax--italic {
+  color: #c678dd;
+  font-style: italic;
+}
+.syntax--markup.syntax--heading {
+  color: #e06c75;
+}
+.syntax--markup.syntax--heading .syntax--punctuation.syntax--definition.syntax--heading {
+  color: #61afef;
+}
+.syntax--markup.syntax--link {
+  color: #56b6c2;
+}
+.syntax--markup.syntax--inserted {
+  color: #98c379;
+}
+.syntax--markup.syntax--quote {
+  color: #d19a66;
+}
+.syntax--markup.syntax--raw {
+  color: #98c379;
+}
+.syntax--source.syntax--c .syntax--keyword.syntax--operator {
+  color: #c678dd;
+}
+.syntax--source.syntax--cpp .syntax--keyword.syntax--operator {
+  color: #c678dd;
+}
+.syntax--source.syntax--cs .syntax--keyword.syntax--operator {
+  color: #c678dd;
+}
+.syntax--source.syntax--css .syntax--property-name,
+.syntax--source.syntax--css .syntax--property-value {
+  color: #828997;
+}
+.syntax--source.syntax--css .syntax--property-name.syntax--support,
+.syntax--source.syntax--css .syntax--property-value.syntax--support {
+  color: #abb2bf;
+}
+.syntax--source.syntax--elixir .syntax--source.syntax--embedded.syntax--source {
+  color: #abb2bf;
+}
+.syntax--source.syntax--elixir .syntax--constant.syntax--language,
+.syntax--source.syntax--elixir .syntax--constant.syntax--numeric,
+.syntax--source.syntax--elixir .syntax--constant.syntax--definition {
+  color: #61afef;
+}
+.syntax--source.syntax--elixir .syntax--variable.syntax--definition,
+.syntax--source.syntax--elixir .syntax--variable.syntax--anonymous {
+  color: #c678dd;
+}
+.syntax--source.syntax--elixir .syntax--parameter.syntax--variable.syntax--function {
+  color: #d19a66;
+  font-style: italic;
+}
+.syntax--source.syntax--elixir .syntax--quoted {
+  color: #98c379;
+}
+.syntax--source.syntax--elixir .syntax--keyword.syntax--special-method,
+.syntax--source.syntax--elixir .syntax--embedded.syntax--section,
+.syntax--source.syntax--elixir .syntax--embedded.syntax--source.syntax--empty {
+  color: #e06c75;
+}
+.syntax--source.syntax--elixir .syntax--readwrite.syntax--module .syntax--punctuation {
+  color: #e06c75;
+}
+.syntax--source.syntax--elixir .syntax--regexp.syntax--section,
+.syntax--source.syntax--elixir .syntax--regexp.syntax--string {
+  color: #be5046;
+}
+.syntax--source.syntax--elixir .syntax--separator,
+.syntax--source.syntax--elixir .syntax--keyword.syntax--operator {
+  color: #d19a66;
+}
+.syntax--source.syntax--elixir .syntax--variable.syntax--constant {
+  color: #e5c07b;
+}
+.syntax--source.syntax--elixir .syntax--array,
+.syntax--source.syntax--elixir .syntax--scope,
+.syntax--source.syntax--elixir .syntax--section {
+  color: #828997;
+}
+.syntax--source.syntax--gfm .syntax--markup {
+  -webkit-font-smoothing: auto;
+}
+.syntax--source.syntax--gfm .syntax--link .syntax--entity {
+  color: #61afef;
+}
+.syntax--source.syntax--go .syntax--storage.syntax--type.syntax--string {
+  color: #c678dd;
+}
+.syntax--source.syntax--ini .syntax--keyword.syntax--other.syntax--definition.syntax--ini {
+  color: #e06c75;
+}
+.syntax--source.syntax--java .syntax--storage.syntax--modifier.syntax--import {
+  color: #e5c07b;
+}
+.syntax--source.syntax--java .syntax--storage.syntax--type {
+  color: #e5c07b;
+}
+.syntax--source.syntax--java .syntax--keyword.syntax--operator.syntax--instanceof {
+  color: #c678dd;
+}
+.syntax--source.syntax--java-properties .syntax--meta.syntax--key-pair {
+  color: #e06c75;
+}
+.syntax--source.syntax--java-properties .syntax--meta.syntax--key-pair > .syntax--punctuation {
+  color: #abb2bf;
+}
+.syntax--source.syntax--js .syntax--keyword.syntax--operator {
+  color: #56b6c2;
+}
+.syntax--source.syntax--js .syntax--keyword.syntax--operator.syntax--delete,
+.syntax--source.syntax--js .syntax--keyword.syntax--operator.syntax--in,
+.syntax--source.syntax--js .syntax--keyword.syntax--operator.syntax--of,
+.syntax--source.syntax--js .syntax--keyword.syntax--operator.syntax--instanceof,
+.syntax--source.syntax--js .syntax--keyword.syntax--operator.syntax--new,
+.syntax--source.syntax--js .syntax--keyword.syntax--operator.syntax--typeof,
+.syntax--source.syntax--js .syntax--keyword.syntax--operator.syntax--void {
+  color: #c678dd;
+}
+.syntax--source.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--json > .syntax--string.syntax--quoted.syntax--json {
+  color: #e06c75;
+}
+.syntax--source.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--json > .syntax--string.syntax--quoted.syntax--json > .syntax--punctuation.syntax--string {
+  color: #e06c75;
+}
+.syntax--source.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--json > .syntax--value.syntax--json > .syntax--string.syntax--quoted.syntax--json,
+.syntax--source.syntax--json .syntax--meta.syntax--structure.syntax--array.syntax--json > .syntax--value.syntax--json > .syntax--string.syntax--quoted.syntax--json,
+.syntax--source.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--json > .syntax--value.syntax--json > .syntax--string.syntax--quoted.syntax--json > .syntax--punctuation,
+.syntax--source.syntax--json .syntax--meta.syntax--structure.syntax--array.syntax--json > .syntax--value.syntax--json > .syntax--string.syntax--quoted.syntax--json > .syntax--punctuation {
+  color: #98c379;
+}
+.syntax--source.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--json > .syntax--constant.syntax--language.syntax--json,
+.syntax--source.syntax--json .syntax--meta.syntax--structure.syntax--array.syntax--json > .syntax--constant.syntax--language.syntax--json {
+  color: #56b6c2;
+}
+.syntax--source.syntax--ruby .syntax--constant.syntax--other.syntax--symbol > .syntax--punctuation {
+  color: inherit;
+}
+.syntax--source.syntax--php .syntax--class.syntax--bracket {
+  color: #abb2bf;
+}
+.syntax--source.syntax--python .syntax--keyword.syntax--operator.syntax--logical.syntax--python {
+  color: #c678dd;
+}
+.syntax--source.syntax--python .syntax--variable.syntax--parameter {
+  color: #d19a66;
+}
+</style>
+  </head>
+  <body class='markdown-preview' data-use-github-style><h2 id="hour-12">Hour 12</h2>
+<h2 id="javascript-and-css">JavaScript and CSS</h2>
+<h3 id="what-you-ll-learn-in-this-hour-">What You’ll Learn in This Hour:</h3>
+<blockquote>
+<ul>
+<li>Separating style from content</li>
+<li>The DOM style property</li>
+<li>Retrieving styles</li>
+<li>Setting styles</li>
+<li>Accessing classes using className</li>
+<li>The DOM styleSheet object</li>
+<li>Enabling, disabling, and switching stylesheets in JavaScript</li>
+<li>Changing the mouse cursor</li>
+</ul>
+</blockquote>
+<p>In the early days of the World Wide Web, pages were all about their text content. Early browsers had rudimentary support for graphic effects—some didn’t even support images. Styling a web page was largely a matter of using the few style-related attributes and tags allowed by the early incarnations of HTML.</p>
+<p>Things improved markedly with the introduction of browser support for Cascading Style Sheets (CSS), which allowed the styling of a page to be treated independently from its HTML markup.</p>
+<p>Earlier in the book, you learned how to edit the structure of your page using JavaScript’s DOM methods. However, JavaScript can also be used to access and amend CSS styles for the current page. In this hour you learn how.</p>
+<h3 id="a-ten-minute-css-primer">A Ten-Minute CSS Primer</h3>
+<p>If you’ve decided to learn JavaScript there’s a pretty good chance that you’re already familiar with CSS styling. Just in case it’s managed to pass you by, let’s review the basics.</p>
+<h4 id="separating-style-from-content">Separating Style from Content</h4>
+<p>Before CSS came along, most styling in HTML pages was carried out using HTML tags and/or their attributes. To change the font color of a piece of text, for example, you would have used something like this:</p>
+<p><code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">&lt;p&gt;&lt;font color="red"&gt;This text is in red!&lt;/font&gt;&lt;/p&gt;</code></p>
+<p>This was pretty awful for a number of reasons:</p>
+<ul>
+<li>Every single piece of text in the page that we wanted to be colored red had to be marked up with these extra tags.</li>
+<li>The created style could not be carried over to other pages; they too had to be marked up individually with additional HTML.</li>
+<li>To later change pages’ styles, you had to edit each and every page and sift through the HTML, changing every style-related tag and attribute individually.</li>
+<li>With all this extra markup, the HTML became very hard to read and maintain.</li>
+</ul>
+<p>CSS attempts to separate the styling of an HTML element from the markup function of that element. This is done by defining individual style declarations and then applying these to HTML elements or collections of elements.</p>
+<p>You can use CSS to style the visual properties of a page element, such as color, font, and size, as well as format-related properties such as positioning, margins, padding, and alignment.</p>
+<p>Separating style from content in this way brings with it a lot of benefits:</p>
+<ul>
+<li>Style declarations can be applied to more than one element or even (when using external stylesheets) more than one page.</li>
+<li>Changes to style declarations affect all associated HTML elements, making updating your site’s style more accurate, quick, and efficient.</li>
+<li>Sharing styles encourages more consistent styling through your site.</li>
+<li>HTML markup is clearer to read and maintain.</li>
+</ul>
+<h4 id="css-style-declarations">CSS Style Declarations</h4>
+<p>The syntax of CSS style declarations is not unlike that of JavaScript functions. Suppose you want to declare a style for all paragraph elements in a page, causing the font color inside the paragraphs to be colored red:</p>
+<pre class="editor-colors lang-CSS"><div class="line"><span class="syntax--source syntax--css"><span class="syntax--meta syntax--selector syntax--css"><span class="syntax--entity syntax--name syntax--tag syntax--css"><span>p</span></span></span><span>&nbsp;</span><span class="syntax--meta syntax--property-list syntax--css"><span class="syntax--punctuation syntax--section syntax--property-list syntax--begin syntax--bracket syntax--curly syntax--css"><span>{</span></span></span></span></div><div class="line"><span class="syntax--source syntax--css"><span class="syntax--meta syntax--property-list syntax--css"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="syntax--meta syntax--property-name syntax--css"><span class="syntax--support syntax--type syntax--property-name syntax--css"><span>color</span></span></span><span class="syntax--punctuation syntax--separator syntax--key-value syntax--css"><span>:</span></span><span>&nbsp;</span><span class="syntax--meta syntax--property-value syntax--css"><span class="syntax--support syntax--constant syntax--color syntax--w3c-standard-color-name syntax--css"><span>red</span></span></span></span></span></div><div class="line"><span class="syntax--source syntax--css"><span class="syntax--meta syntax--property-list syntax--css"><span class="syntax--punctuation syntax--section syntax--property-list syntax--end syntax--bracket syntax--curly syntax--css"><span>}</span></span></span></span></div></pre>
+<p>You can apply more than one style rule to your chosen element or collection of elements, separating them with semicolons:</p>
+<pre class="editor-colors lang-CSS"><div class="line"><span class="syntax--source syntax--css"><span class="syntax--meta syntax--selector syntax--css"><span class="syntax--entity syntax--name syntax--tag syntax--css"><span>p</span></span></span><span>&nbsp;</span><span class="syntax--meta syntax--property-list syntax--css"><span class="syntax--punctuation syntax--section syntax--property-list syntax--begin syntax--bracket syntax--curly syntax--css"><span>{</span></span></span></span></div><div class="line"><span class="syntax--source syntax--css"><span class="syntax--meta syntax--property-list syntax--css"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="syntax--meta syntax--property-name syntax--css"><span class="syntax--support syntax--type syntax--property-name syntax--css"><span>color</span></span></span><span class="syntax--punctuation syntax--separator syntax--key-value syntax--css"><span>:</span></span><span>&nbsp;</span><span class="syntax--meta syntax--property-value syntax--css"><span class="syntax--support syntax--constant syntax--color syntax--w3c-standard-color-name syntax--css"><span>red</span></span></span><span class="syntax--punctuation syntax--terminator syntax--rule syntax--css"><span>;</span></span></span></span></div><div class="line"><span class="syntax--source syntax--css"><span class="syntax--meta syntax--property-list syntax--css"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="syntax--meta syntax--property-name syntax--css"><span class="syntax--support syntax--type syntax--property-name syntax--css"><span>text-decoration</span></span></span><span class="syntax--punctuation syntax--separator syntax--key-value syntax--css"><span>:</span></span><span>&nbsp;</span><span class="syntax--meta syntax--property-value syntax--css"><span class="syntax--support syntax--constant syntax--property-value syntax--css"><span>italic</span></span></span><span class="syntax--punctuation syntax--terminator syntax--rule syntax--css"><span>;</span></span></span></span></div><div class="line"><span class="syntax--source syntax--css"><span class="syntax--meta syntax--property-list syntax--css"><span class="syntax--punctuation syntax--section syntax--property-list syntax--end syntax--bracket syntax--curly syntax--css"><span>}</span></span></span></span></div></pre>
+<p>Since you have used the selector <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">p</code>, the preceding style declarations affect every paragraph element on the page. To select just one specific page element, you can do so by using its ID. To do so, the selector you use for your CSS style declaration is not the name of the HTML element, but the ID value prefixed by a hash character. For instance, the HTML element</p>
+<p><code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">&lt;p id="para1"&gt;Here is some text.&lt;/p&gt;</code></p>
+<p>could be styled by the following style declaration:</p>
+<pre class="editor-colors lang-CSS"><div class="line"><span class="syntax--source syntax--css"><span class="syntax--meta syntax--selector syntax--css"><span class="syntax--entity syntax--other syntax--attribute-name syntax--id syntax--css"><span class="syntax--punctuation syntax--definition syntax--entity syntax--css"><span>#</span></span><span>para1</span></span></span><span>&nbsp;</span><span class="syntax--meta syntax--property-list syntax--css"><span class="syntax--punctuation syntax--section syntax--property-list syntax--begin syntax--bracket syntax--curly syntax--css"><span>{</span></span></span></span></div><div class="line"><span class="syntax--source syntax--css"><span class="syntax--meta syntax--property-list syntax--css"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="syntax--meta syntax--property-name syntax--css"><span class="syntax--support syntax--type syntax--property-name syntax--css"><span>font-weight</span></span></span><span class="syntax--punctuation syntax--separator syntax--key-value syntax--css"><span>:</span></span><span>&nbsp;</span><span class="syntax--meta syntax--property-value syntax--css"><span class="syntax--support syntax--constant syntax--property-value syntax--css"><span>bold</span></span></span><span class="syntax--punctuation syntax--terminator syntax--rule syntax--css"><span>;</span></span></span></span></div><div class="line"><span class="syntax--source syntax--css"><span class="syntax--meta syntax--property-list syntax--css"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="syntax--meta syntax--property-name syntax--css"><span class="syntax--support syntax--type syntax--property-name syntax--css"><span>font-size</span></span></span><span class="syntax--punctuation syntax--separator syntax--key-value syntax--css"><span>:</span></span><span>&nbsp;</span><span class="syntax--meta syntax--property-value syntax--css"><span class="syntax--constant syntax--numeric syntax--css"><span>12</span><span class="syntax--keyword syntax--other syntax--unit syntax--pt syntax--css"><span>pt</span></span></span></span><span class="syntax--punctuation syntax--terminator syntax--rule syntax--css"><span>;</span></span></span></span></div><div class="line"><span class="syntax--source syntax--css"><span class="syntax--meta syntax--property-list syntax--css"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="syntax--meta syntax--property-name syntax--css"><span class="syntax--support syntax--type syntax--property-name syntax--css"><span>color</span></span></span><span class="syntax--punctuation syntax--separator syntax--key-value syntax--css"><span>:</span></span><span>&nbsp;</span><span class="syntax--meta syntax--property-value syntax--css"><span class="syntax--support syntax--constant syntax--color syntax--w3c-standard-color-name syntax--css"><span>black</span></span></span><span class="syntax--punctuation syntax--terminator syntax--rule syntax--css"><span>;</span></span></span></span></div><div class="line"><span class="syntax--source syntax--css"><span class="syntax--meta syntax--property-list syntax--css"><span class="syntax--punctuation syntax--section syntax--property-list syntax--end syntax--bracket syntax--curly syntax--css"><span>}</span></span></span></span></div></pre>
+<p>To style multiple page elements using the same style declaration, you can simply separate the selectors with commas. The following style declaration affects all <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">&lt;div&gt;</code> elements on the page, plus whatever element has the id value para1:</p>
+<pre class="editor-colors lang-CSS"><div class="line"><span class="syntax--source syntax--css"><span class="syntax--meta syntax--selector syntax--css"><span class="syntax--entity syntax--name syntax--tag syntax--css"><span>div</span></span><span class="syntax--punctuation syntax--separator syntax--list syntax--comma syntax--css"><span>,</span></span><span>&nbsp;</span><span class="syntax--entity syntax--other syntax--attribute-name syntax--id syntax--css"><span class="syntax--punctuation syntax--definition syntax--entity syntax--css"><span>#</span></span><span>para1</span></span></span><span>&nbsp;</span><span class="syntax--meta syntax--property-list syntax--css"><span class="syntax--punctuation syntax--section syntax--property-list syntax--begin syntax--bracket syntax--curly syntax--css"><span>{</span></span></span></span></div><div class="line"><span class="syntax--source syntax--css"><span class="syntax--meta syntax--property-list syntax--css"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="syntax--meta syntax--property-name syntax--css"><span class="syntax--support syntax--type syntax--property-name syntax--css"><span>color</span></span></span><span class="syntax--punctuation syntax--separator syntax--key-value syntax--css"><span>:</span></span><span>&nbsp;</span><span class="syntax--meta syntax--property-value syntax--css"><span class="syntax--support syntax--constant syntax--color syntax--w3c-standard-color-name syntax--css"><span>yellow</span></span></span><span class="syntax--punctuation syntax--terminator syntax--rule syntax--css"><span>;</span></span></span></span></div><div class="line"><span class="syntax--source syntax--css"><span class="syntax--meta syntax--property-list syntax--css"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="syntax--meta syntax--property-name syntax--css"><span class="syntax--support syntax--type syntax--property-name syntax--css"><span>background-color</span></span></span><span class="syntax--punctuation syntax--separator syntax--key-value syntax--css"><span>:</span></span><span>&nbsp;</span><span class="syntax--meta syntax--property-value syntax--css"><span class="syntax--support syntax--constant syntax--color syntax--w3c-standard-color-name syntax--css"><span>black</span></span></span><span class="syntax--punctuation syntax--terminator syntax--rule syntax--css"><span>;</span></span></span></span></div><div class="line"><span class="syntax--source syntax--css"><span class="syntax--meta syntax--property-list syntax--css"><span class="syntax--punctuation syntax--section syntax--property-list syntax--end syntax--bracket syntax--curly syntax--css"><span>}</span></span></span></span></div></pre>
+<p>Alternatively, you can select all elements sharing a particular class attribute, by prefixing the class name with a dot to form your selector:</p>
+<pre class="editor-colors lang-CSS"><div class="line"><span class="syntax--source syntax--css"><span>&lt;</span><span class="syntax--meta syntax--selector syntax--css"><span class="syntax--entity syntax--name syntax--tag syntax--css"><span>p</span></span><span>&nbsp;class="info"</span><span class="syntax--keyword syntax--operator syntax--combinator syntax--css"><span>&gt;</span></span><span>Welcome&nbsp;to&nbsp;my&nbsp;website.&lt;</span></span><span>/</span><span class="syntax--meta syntax--selector syntax--css"><span class="syntax--entity syntax--name syntax--tag syntax--css"><span>p</span></span><span class="syntax--keyword syntax--operator syntax--combinator syntax--css"><span>&gt;</span></span></span></span></div><div class="line"><span class="syntax--source syntax--css"><span class="syntax--meta syntax--selector syntax--css"><span>&lt;</span><span class="syntax--entity syntax--name syntax--tag syntax--css"><span>span</span></span><span>&nbsp;class="info"</span><span class="syntax--keyword syntax--operator syntax--combinator syntax--css"><span>&gt;</span></span><span>Please&nbsp;log&nbsp;in&nbsp;or&nbsp;register&nbsp;using&nbsp;the&nbsp;</span><span class="syntax--entity syntax--name syntax--tag syntax--css"><span>form</span></span></span></span></div><div class="line"><span class="syntax--source syntax--css"><span class="syntax--meta syntax--selector syntax--css"><span>below.&lt;</span></span><span>/</span><span class="syntax--meta syntax--selector syntax--css"><span class="syntax--entity syntax--name syntax--tag syntax--css"><span>span</span></span><span class="syntax--keyword syntax--operator syntax--combinator syntax--css"><span>&gt;</span></span></span></span></div></pre>
+<p>We can style these elements with one declaration:</p>
+<pre class="editor-colors lang-CSS"><div class="line"><span class="syntax--source syntax--css"><span class="syntax--meta syntax--selector syntax--css"><span class="syntax--entity syntax--other syntax--attribute-name syntax--class syntax--css"><span class="syntax--punctuation syntax--definition syntax--entity syntax--css"><span>.</span></span><span>info</span></span></span><span>&nbsp;</span><span class="syntax--meta syntax--property-list syntax--css"><span class="syntax--punctuation syntax--section syntax--property-list syntax--begin syntax--bracket syntax--curly syntax--css"><span>{</span></span></span></span></div><div class="line"><span class="syntax--source syntax--css"><span class="syntax--meta syntax--property-list syntax--css"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="syntax--meta syntax--property-name syntax--css"><span class="syntax--support syntax--type syntax--property-name syntax--css"><span>font-family</span></span></span><span class="syntax--punctuation syntax--separator syntax--key-value syntax--css"><span>:</span></span><span>&nbsp;</span><span class="syntax--meta syntax--property-value syntax--css"><span class="syntax--support syntax--constant syntax--font-name syntax--css"><span>arial</span></span><span class="syntax--punctuation syntax--separator syntax--list syntax--comma syntax--css"><span>,</span></span><span>&nbsp;</span><span class="syntax--support syntax--constant syntax--font-name syntax--css"><span>verdana</span></span><span class="syntax--punctuation syntax--separator syntax--list syntax--comma syntax--css"><span>,</span></span><span>&nbsp;</span><span class="syntax--support syntax--constant syntax--font-name syntax--css"><span>sans-serif</span></span></span><span class="syntax--punctuation syntax--terminator syntax--rule syntax--css"><span>;</span></span></span></span></div><div class="line"><span class="syntax--source syntax--css"><span class="syntax--meta syntax--property-list syntax--css"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="syntax--meta syntax--property-name syntax--css"><span class="syntax--support syntax--type syntax--property-name syntax--css"><span>color</span></span></span><span class="syntax--punctuation syntax--separator syntax--key-value syntax--css"><span>:</span></span><span>&nbsp;</span><span class="syntax--meta syntax--property-value syntax--css"><span class="syntax--support syntax--constant syntax--color syntax--w3c-standard-color-name syntax--css"><span>green</span></span></span><span class="syntax--punctuation syntax--terminator syntax--rule syntax--css"><span>;</span></span></span></span></div><div class="line"><span class="syntax--source syntax--css"><span class="syntax--meta syntax--property-list syntax--css"><span class="syntax--punctuation syntax--section syntax--property-list syntax--end syntax--bracket syntax--curly syntax--css"><span>}</span></span></span></span></div></pre>
+<h4 id="tip">Tip</h4>
+<blockquote>
+<p>Styles defined in external stylesheets have the advantage that they can easily be applied to multiple pages, whereas styles defined within the page can’t.</p>
+</blockquote>
+<h4 id="note">Note</h4>
+<blockquote>
+<p>In addition to the syntax
+<code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">myNode.style.width</code>
+you can also use the equivalent
+<code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">myNode.style["width"]</code>
+This is sometimes necessary, such as when passing a
+property name as a variable:</p>
+<pre class="editor-colors lang-JavaScript"><div class="line"><span class="syntax--source syntax--js"><span class="syntax--storage syntax--type syntax--var syntax--js"><span>var</span></span><span>&nbsp;myProperty&nbsp;</span><span class="syntax--keyword syntax--operator syntax--assignment syntax--js"><span>=</span></span><span>&nbsp;</span><span class="syntax--string syntax--quoted syntax--double syntax--js"><span class="syntax--punctuation syntax--definition syntax--string syntax--begin syntax--js"><span>"</span></span><span>width</span><span class="syntax--punctuation syntax--definition syntax--string syntax--end syntax--js"><span>"</span></span></span><span class="syntax--punctuation syntax--terminator syntax--statement syntax--js"><span>;</span></span></span></div><div class="line"><span class="syntax--source syntax--js"><span class="syntax--variable syntax--other syntax--object syntax--js"><span>myNode</span></span><span class="syntax--meta syntax--delimiter syntax--property syntax--period syntax--js"><span>.</span></span><span class="syntax--support syntax--variable syntax--property syntax--dom syntax--js"><span>style</span></span><span class="syntax--meta syntax--brace syntax--square syntax--js"><span>[</span></span><span>myProperty</span><span class="syntax--meta syntax--brace syntax--square syntax--js"><span>]</span></span><span>&nbsp;</span><span class="syntax--keyword syntax--operator syntax--assignment syntax--js"><span>=</span></span><span>&nbsp;</span><span class="syntax--string syntax--quoted syntax--double syntax--js"><span class="syntax--punctuation syntax--definition syntax--string syntax--begin syntax--js"><span>"</span></span><span>200px</span><span class="syntax--punctuation syntax--definition syntax--string syntax--end syntax--js"><span>"</span></span></span><span class="syntax--punctuation syntax--terminator syntax--statement syntax--js"><span>;</span></span></span></div></pre>
+</blockquote>
+<h4 id="note">Note</h4>
+<blockquote>
+<p>In Hour 13, “Introducing CSS3,” you’ll read about another way to access style properties in JavaScript that avoids the limitation of only working for inline styles.</p>
+</blockquote>
+<h4 id="note">Note</h4>
+<blockquote>
+<p>CSS contains many properties with names that contain hyphens, such as background-color, font-size, text-align, and so on. Since the hyphen is not allowed in JavaScript property and method names, we need to amend the way these properties are written. To access such a property in JavaScript, remove the hyphen from the property name and capitalize the character that follows, so font-size becomes fontSize, text-align becomes textAlign, and so on.</p>
+</blockquote>
+<h4 id="where-to-place-style-declarations">Where to Place Style Declarations</h4>
+<p>Somewhat similarly to JavaScript statements, CSS style declarations can either appear within the page or be saved in an external file and referenced from within the HTML page.</p>
+<p>To reference an external stylesheet, normal practice is to add a line to the page <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">&lt;head&gt;</code> like this:</p>
+<pre class="editor-colors lang-HTML"><div class="line"><span class="syntax--text syntax--html syntax--basic"><span class="syntax--meta syntax--tag syntax--inline syntax--link syntax--html"><span class="syntax--punctuation syntax--definition syntax--tag syntax--begin syntax--html"><span>&lt;</span></span><span class="syntax--entity syntax--name syntax--tag syntax--inline syntax--link syntax--html"><span>link</span></span><span>&nbsp;</span><span class="syntax--meta syntax--attribute-with-value syntax--html"><span class="syntax--entity syntax--other syntax--attribute-name syntax--html"><span>rel</span></span><span class="syntax--punctuation syntax--separator syntax--key-value syntax--html"><span>=</span></span><span class="syntax--string syntax--quoted syntax--double syntax--html"><span class="syntax--punctuation syntax--definition syntax--string syntax--begin syntax--html"><span>"</span></span><span>stylesheet</span><span class="syntax--punctuation syntax--definition syntax--string syntax--end syntax--html"><span>"</span></span></span></span><span>&nbsp;</span><span class="syntax--meta syntax--attribute-with-value syntax--html"><span class="syntax--entity syntax--other syntax--attribute-name syntax--html"><span>type</span></span><span class="syntax--punctuation syntax--separator syntax--key-value syntax--html"><span>=</span></span><span class="syntax--string syntax--quoted syntax--double syntax--html"><span class="syntax--punctuation syntax--definition syntax--string syntax--begin syntax--html"><span>"</span></span><span>text/css</span><span class="syntax--punctuation syntax--definition syntax--string syntax--end syntax--html"><span>"</span></span></span></span><span>&nbsp;</span><span class="syntax--meta syntax--attribute-with-value syntax--html"><span class="syntax--entity syntax--other syntax--attribute-name syntax--html"><span>href</span></span><span class="syntax--punctuation syntax--separator syntax--key-value syntax--html"><span>=</span></span><span class="syntax--string syntax--quoted syntax--double syntax--html"><span class="syntax--punctuation syntax--definition syntax--string syntax--begin syntax--html"><span>"</span></span><span>style.css</span><span class="syntax--punctuation syntax--definition syntax--string syntax--end syntax--html"><span>"</span></span></span></span><span class="syntax--punctuation syntax--definition syntax--tag syntax--end syntax--html"><span>&nbsp;/&gt;</span></span></span></span></div></pre>
+<p>Alternatively, you can place style declarations directly in the <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">&lt;head&gt;</code> of your page between <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">&lt;style&gt;</code> and <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">&lt;/style&gt;</code> tags:</p>
+<pre class="editor-colors lang-CSS"><div class="line"><span class="syntax--source syntax--css"><span>&lt;</span><span class="syntax--meta syntax--selector syntax--css"><span class="syntax--entity syntax--name syntax--tag syntax--css"><span>style</span></span><span class="syntax--keyword syntax--operator syntax--combinator syntax--css"><span>&gt;</span></span></span></span></div><div class="line"><span class="syntax--source syntax--css"><span class="syntax--meta syntax--selector syntax--css"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="syntax--entity syntax--name syntax--tag syntax--css"><span>p</span></span></span><span>&nbsp;</span><span class="syntax--meta syntax--property-list syntax--css"><span class="syntax--punctuation syntax--section syntax--property-list syntax--begin syntax--bracket syntax--curly syntax--css"><span>{</span></span></span></span></div><div class="line"><span class="syntax--source syntax--css"><span class="syntax--meta syntax--property-list syntax--css"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="syntax--meta syntax--property-name syntax--css"><span class="syntax--support syntax--type syntax--property-name syntax--css"><span>color</span></span></span><span class="syntax--punctuation syntax--separator syntax--key-value syntax--css"><span>:</span></span><span>&nbsp;</span><span class="syntax--meta syntax--property-value syntax--css"><span class="syntax--support syntax--constant syntax--color syntax--w3c-standard-color-name syntax--css"><span>black</span></span></span><span class="syntax--punctuation syntax--terminator syntax--rule syntax--css"><span>;</span></span></span></span></div><div class="line"><span class="syntax--source syntax--css"><span class="syntax--meta syntax--property-list syntax--css"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="syntax--meta syntax--property-name syntax--css"><span class="syntax--support syntax--type syntax--property-name syntax--css"><span>font-family</span></span></span><span class="syntax--punctuation syntax--separator syntax--key-value syntax--css"><span>:</span></span><span>&nbsp;</span><span class="syntax--meta syntax--property-value syntax--css"><span class="syntax--support syntax--constant syntax--font-name syntax--css"><span>tahoma</span></span></span><span class="syntax--punctuation syntax--terminator syntax--rule syntax--css"><span>;</span></span></span></span></div><div class="line"><span class="syntax--source syntax--css"><span class="syntax--meta syntax--property-list syntax--css"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="syntax--punctuation syntax--section syntax--property-list syntax--end syntax--bracket syntax--curly syntax--css"><span>}</span></span></span></span></div><div class="line"><span class="syntax--source syntax--css"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="syntax--meta syntax--selector syntax--css"><span class="syntax--entity syntax--name syntax--tag syntax--css"><span>h1</span></span></span><span>&nbsp;</span><span class="syntax--meta syntax--property-list syntax--css"><span class="syntax--punctuation syntax--section syntax--property-list syntax--begin syntax--bracket syntax--curly syntax--css"><span>{</span></span></span></span></div><div class="line"><span class="syntax--source syntax--css"><span class="syntax--meta syntax--property-list syntax--css"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="syntax--meta syntax--property-name syntax--css"><span class="syntax--support syntax--type syntax--property-name syntax--css"><span>color</span></span></span><span class="syntax--punctuation syntax--separator syntax--key-value syntax--css"><span>:</span></span><span>&nbsp;</span><span class="syntax--meta syntax--property-value syntax--css"><span class="syntax--support syntax--constant syntax--color syntax--w3c-standard-color-name syntax--css"><span>blue</span></span></span><span class="syntax--punctuation syntax--terminator syntax--rule syntax--css"><span>;</span></span></span></span></div><div class="line"><span class="syntax--source syntax--css"><span class="syntax--meta syntax--property-list syntax--css"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="syntax--meta syntax--property-name syntax--css"><span class="syntax--support syntax--type syntax--property-name syntax--css"><span>font-size</span></span></span><span class="syntax--punctuation syntax--separator syntax--key-value syntax--css"><span>:</span></span><span>&nbsp;</span><span class="syntax--meta syntax--property-value syntax--css"><span class="syntax--constant syntax--numeric syntax--css"><span>22</span><span class="syntax--keyword syntax--other syntax--unit syntax--pt syntax--css"><span>pt</span></span></span></span><span class="syntax--punctuation syntax--terminator syntax--rule syntax--css"><span>;</span></span></span></span></div><div class="line"><span class="syntax--source syntax--css"><span class="syntax--meta syntax--property-list syntax--css"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="syntax--punctuation syntax--section syntax--property-list syntax--end syntax--bracket syntax--curly syntax--css"><span>}</span></span></span></span></div><div class="line"><span class="syntax--source syntax--css"><span>&lt;/</span><span class="syntax--meta syntax--selector syntax--css"><span class="syntax--entity syntax--name syntax--tag syntax--css"><span>style</span></span><span class="syntax--keyword syntax--operator syntax--combinator syntax--css"><span>&gt;</span></span></span></span></div></pre>
+<p>Finally, it’s possible to add style declarations directly into an HTML element by using the style attribute:</p>
+<p><code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">&lt;p style="color:red; font-size: 12px;"&gt;Please see our terms of service.&lt;/p&gt;</code></p>
+<h3 id="the-dom-style-property">The DOM style Property</h3>
+<p>You saw in previous hours how the HTML page is represented by the browser as a DOM tree. The DOM nodes—individual “leaves and branches” making up the DOM tree—are objects, each having its own properties and methods.</p>
+<p>You’ve seen various methods that allow you to select individual DOM nodes, or collections of nodes, such as <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">document.getElementById()</code>.</p>
+<p>Each DOM node has a property called style, which is itself an object containing information about the CSS styles pertaining to its parent node. Let’s see an example:</p>
+<pre class="editor-colors lang-HTML"><div class="line"><span class="syntax--text syntax--html syntax--basic"><span class="syntax--meta syntax--tag syntax--block syntax--div syntax--html"><span class="syntax--punctuation syntax--definition syntax--tag syntax--begin syntax--html"><span>&lt;</span></span><span class="syntax--entity syntax--name syntax--tag syntax--block syntax--div syntax--html"><span>div</span></span><span>&nbsp;</span><span class="syntax--meta syntax--attribute-with-value syntax--id syntax--html"><span class="syntax--entity syntax--other syntax--attribute-name syntax--id syntax--html"><span>id</span></span><span class="syntax--punctuation syntax--separator syntax--key-value syntax--html"><span>=</span></span><span class="syntax--string syntax--quoted syntax--double syntax--html"><span class="syntax--punctuation syntax--definition syntax--string syntax--begin syntax--html"><span>"</span></span><span class="syntax--meta syntax--toc-list syntax--id syntax--html"><span>id1</span></span><span class="syntax--punctuation syntax--definition syntax--string syntax--end syntax--html"><span>"</span></span></span></span><span>&nbsp;</span><span class="syntax--meta syntax--attribute-with-value syntax--style syntax--html"><span class="syntax--entity syntax--other syntax--attribute-name syntax--style syntax--html"><span>style</span></span><span class="syntax--punctuation syntax--separator syntax--key-value syntax--html"><span>=</span></span><span class="syntax--string syntax--quoted syntax--double syntax--html"><span class="syntax--punctuation syntax--definition syntax--string syntax--begin syntax--html"><span>"</span></span><span class="syntax--source syntax--css syntax--style syntax--html"><span class="syntax--meta syntax--property-list syntax--css"><span class="syntax--meta syntax--property-name syntax--css"><span class="syntax--support syntax--type syntax--property-name syntax--css"><span>width</span></span></span><span class="syntax--punctuation syntax--separator syntax--key-value syntax--css"><span>:</span></span><span class="syntax--meta syntax--property-value syntax--css"><span class="syntax--constant syntax--numeric syntax--css"><span>200</span><span class="syntax--keyword syntax--other syntax--unit syntax--px syntax--css"><span>px</span></span></span></span><span class="syntax--punctuation syntax--terminator syntax--rule syntax--css"><span>;</span></span></span></span><span class="syntax--punctuation syntax--definition syntax--string syntax--end syntax--html"><span>"</span></span></span></span><span class="syntax--punctuation syntax--definition syntax--tag syntax--end syntax--html"><span>&gt;</span></span></span><span>Welcome&nbsp;back&nbsp;to&nbsp;my&nbsp;site.</span><span class="syntax--meta syntax--tag syntax--block syntax--div syntax--html"><span class="syntax--punctuation syntax--definition syntax--tag syntax--begin syntax--html"><span>&lt;/</span></span><span class="syntax--entity syntax--name syntax--tag syntax--block syntax--div syntax--html"><span>div</span></span><span class="syntax--punctuation syntax--definition syntax--tag syntax--end syntax--html"><span>&gt;</span></span></span></span></div><div class="line"><span class="syntax--text syntax--html syntax--basic"><span class="syntax--meta syntax--tag syntax--script syntax--html"><span class="syntax--punctuation syntax--definition syntax--tag syntax--html"><span>&lt;</span></span><span class="syntax--entity syntax--name syntax--tag syntax--script syntax--html"><span>script</span></span><span class="syntax--punctuation syntax--definition syntax--tag syntax--html"><span>&gt;</span></span></span></span></div><div class="line"><span class="syntax--text syntax--html syntax--basic"><span class="syntax--meta syntax--tag syntax--script syntax--html"><span class="syntax--source syntax--js syntax--embedded syntax--html"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="syntax--storage syntax--type syntax--var syntax--js"><span>var</span></span><span>&nbsp;myNode&nbsp;</span><span class="syntax--keyword syntax--operator syntax--assignment syntax--js"><span>=</span></span><span>&nbsp;</span><span class="syntax--support syntax--variable syntax--dom syntax--js"><span>document</span></span><span class="syntax--meta syntax--method-call syntax--js"><span class="syntax--meta syntax--delimiter syntax--method syntax--period syntax--js"><span>.</span></span><span class="syntax--support syntax--function syntax--dom syntax--js"><span>getElementById</span></span><span class="syntax--meta syntax--arguments syntax--js"><span class="syntax--punctuation syntax--definition syntax--arguments syntax--begin syntax--bracket syntax--round syntax--js"><span>(</span></span><span class="syntax--string syntax--quoted syntax--double syntax--js"><span class="syntax--punctuation syntax--definition syntax--string syntax--begin syntax--js"><span>"</span></span><span>id1</span><span class="syntax--punctuation syntax--definition syntax--string syntax--end syntax--js"><span>"</span></span></span><span class="syntax--punctuation syntax--definition syntax--arguments syntax--end syntax--bracket syntax--round syntax--js"><span>)</span></span></span></span><span class="syntax--punctuation syntax--terminator syntax--statement syntax--js"><span>;</span></span></span></span></span></div><div class="line"><span class="syntax--text syntax--html syntax--basic"><span class="syntax--meta syntax--tag syntax--script syntax--html"><span class="syntax--source syntax--js syntax--embedded syntax--html"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="syntax--meta syntax--function-call syntax--js"><span class="syntax--entity syntax--name syntax--function syntax--js"><span>alert</span></span><span class="syntax--meta syntax--arguments syntax--js"><span class="syntax--punctuation syntax--definition syntax--arguments syntax--begin syntax--bracket syntax--round syntax--js"><span>(</span></span><span class="syntax--variable syntax--other syntax--object syntax--js"><span>myNode</span></span><span class="syntax--meta syntax--delimiter syntax--property syntax--period syntax--js"><span>.</span></span><span class="syntax--support syntax--variable syntax--property syntax--dom syntax--js"><span>style</span></span><span class="syntax--meta syntax--delimiter syntax--property syntax--period syntax--js"><span>.</span></span><span class="syntax--support syntax--variable syntax--property syntax--dom syntax--js"><span>width</span></span><span class="syntax--punctuation syntax--definition syntax--arguments syntax--end syntax--bracket syntax--round syntax--js"><span>)</span></span></span></span><span class="syntax--punctuation syntax--terminator syntax--statement syntax--js"><span>;</span></span></span></span></span></div><div class="line"><span class="syntax--text syntax--html syntax--basic"><span class="syntax--meta syntax--tag syntax--script syntax--html"><span class="syntax--punctuation syntax--definition syntax--tag syntax--html"><span>&lt;/</span></span><span class="syntax--entity syntax--name syntax--tag syntax--script syntax--html"><span>script</span></span><span class="syntax--punctuation syntax--definition syntax--tag syntax--html"><span>&gt;</span></span></span></span></div></pre>
+<p>In this case the alert would display the message “200px.”</p>
+<p>Unfortunately, while this method works fine with inline styles, if you apply a style to a page element via a <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">&lt;style&gt;</code> element in the head of your page, or in an external stylesheet, the DOM style object won’t be able to access it.</p>
+<p>The DOM style object, though, is not read-only; you can set the values of style properties using the style object, and properties you’ve set this way will be returned by the DOM style object.</p>
+<h4 id="try-it-yourself-setting-style-properties">Try It Yourself: Setting Style Properties</h4>
+<p>Let’s write a function to toggle the background color and font color of a page element between two values, using the DOM style object:</p>
+<p>function toggle() {
+    var myElement = document.getElementById("id1");
+    if(myElement.style.backgroundColor == 'red') {
+        myElement.style.backgroundColor = 'yellow';
+        myElement.style.color = 'black';
+    } else {
+        myElement.style.backgroundColor = 'red';
+        myElement.style.color = 'white';
+    }
+}</p>
+<p>The function toggle() first finds out the current background-color CSS property of a page element, and then compares that color to red.</p>
+<p>If the background-color property currently has the value of red, it sets the style properties of the element to show the text in black on a yellow background; otherwise, it sets the style values to show white text on a red background.</p>
+<p>We use this function to toggle the colors of a <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">&lt;span&gt;</code> element in an HTML document.</p>
+<p>Create the HTML file in your editor and try it out.</p>
+<p>You should see that when the page originally loads, the text is in the default black and has no background color. That happens because these style properties are initially not set in the <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">&lt;style&gt;</code> instructions in the page head, as an inline style, or via the DOM.</p>
+<p>Executing when the button is clicked, the toggle() function checks the current background color of the <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">&lt;span&gt;</code> element. On finding that its value is not currently red, toggle() sets the background color to red and the text color to white.</p>
+<p>The next time the button is clicked, the test condition</p>
+<p><code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">if(myElement.style.backgroundColor == 'red')</code></p>
+<p>returns a value of true, causing the colors to be set instead to black on a yellow background.</p>
+<p><img alt="12fig01.jpg" src="C:\Users\mcerr\Documents\GitHub\sfadmin-training-javascript12\12fig01.jpg"></p>
+<p>FIGURE 12.1 Setting style properties in JavaScript</p>
+<p>Accessing Classes Using className
+Earlier in this hour we discussed separating style from content, and the benefits that this can bring.</p>
+<p>Using JavaScript to edit the properties of the style object, as in the previous exercise, works well—but it does carry with it the danger of reducing this separation of style and content. If your JavaScript code routinely changes elements’ style declarations, the responsibility for styling your pages is no longer lodged firmly in CSS. If you later decide to change the styles your JavaScript applies, you’ll have to go back and edit all of your JavaScript functions.</p>
+<p>Thankfully, we have a mechanism by which JavaScript can restyle pages without overwriting individual style declarations. By using the className property of the element, we can switch the value of the class attribute and with it the associated style declarations for the element. Take a look at Listing 12.2.</p>
+<p>LISTING 12.2 Changing Classes Using className</p>
+<p>The <style> element in the page <head> lists style declarations for two classes, classA and classB. The JavaScript function toggleClass() uses similar logic to the earlier function toggle() of Listing 12.1, except that toggleClass() does not work with the element’s style object. Instead, toggleClass() gets the class name associated with the <div> element and switches its value between classA and classB.</p>
+<p>Figure 12.2 shows the script in action.</p>
+<p>Image
+FIGURE 12.2 Switching classes in JavaScript</p>
+<p>Note</p>
+<p>As an alternative to using className, you could try setting the class attribute for an element to the value classA by using</p>
+<p>element.setAttribute(&quot;class&quot;, &quot;classA&quot;);</p>
+<p>Unfortunately, various versions of Internet Explorer have trouble when trying to set the class attribute, but work fine with className. The statement</p>
+<p>element.className = &quot;classA&quot;;</p>
+<p>seems to work in all browsers.</p>
+<p>The DOM styleSheets Object
+The styleSheets property of the document object contains an array of all the stylesheets on the page, whether they are contained in external files and linked into the page head, or declared between <style> and </style> tags in the page head. The items in the styleSheets array are indexed numerically, starting at zero for the stylesheet appearing first.</p>
+<p>Tip</p>
+<p>You can access the total number of spreadsheets on your page by using</p>
+<p>document.styleSheets.length</p>
+<p>Enabling, Disabling, and Switching Stylesheets
+Each stylesheet in the array has a property called disabled, containing a value of Boolean true or false. This is a read/write property, so we are able to effectively switch individual stylesheets on and off in JavaScript:</p>
+<p>document.styleSheets[0].disabled = true;
+document.styleSheets[1].disabled = false;</p>
+<p>The preceding code snippet “switches on” the second stylesheet in the page (index 1) while “switching off” the first stylesheet (index 0).</p>
+<p>Listing 12.3 has a working example. The script on this page first declares the variable whichSheet, initializing its value at zero:</p>
+<p>var whichSheet = 0;</p>
+<p>This variable keeps track of which of the two stylesheets is currently active. The second line of code initially disables the second of the two stylesheets on the page:</p>
+<p>document.styleSheets[1].disabled = true;</p>
+<p>The function sheet(), which is attached to the onClick event handler to the button on the page when the page loads, carries out three tasks when the button is clicked:</p>
+<p>Disable the stylesheet whose index is stored in variable whichSheet:
+document.styleSheets[whichSheet].disabled = true;</p>
+<p>Toggle variable whichSheet between one and zero:
+whichSheet = (whichSheet == 1) ? 0 : 1;</p>
+<p>Enable the stylesheet corresponding to the new value of whichSheet:
+document.styleSheets[whichSheet].disabled = false;</p>
+<p>The combined effect of these activities is to toggle between the two active stylesheets for the page. The script is shown in action in Listing 12.3 and Figure 12.3.</p>
+<p>Image
+FIGURE 12.3 Switching stylesheets with the styleSheets property</p>
+<p>LISTING 12.3 Toggling Between Stylesheets Using the styleSheets Property</p>
+<p>Try It Yourself: Selecting a Particular Stylesheet</p>
+<p>Video 12.2—Selecting a Particular Stylesheet</p>
+<p>Having your stylesheets indexed by number doesn’t make it easy to select the stylesheet you need. It would be easier if you had a function to allow you to title your stylesheets and select them by their title attribute.</p>
+<p>You need your function to respond in a useful manner if you ask for a stylesheet that doesn’t exist; you want it to maintain the previous stylesheet and send the user a message.</p>
+<p>First, declare a couple of variables and initialize their values:</p>
+<p>var change = false;
+var oldSheet = 0;</p>
+<p>The Boolean variable change keeps track of whether you’ve found a stylesheet with the requested name; once you do so, you change its value to true, indicating that you intend to change stylesheets.</p>
+<p>The integer oldSheet, originally set to zero, will eventually be assigned the number of the currently active sheet; in case you don’t find a new stylesheet matching the requested title, you set this back to active before returning from the function.</p>
+<p>Now you need to cycle through the styleSheets array:</p>
+<p>for (var i = 0; i &lt; document.styleSheets.length; i++) {
+    ...
+}</p>
+<p>For each stylesheet:</p>
+<p>If you find that this is the currently active stylesheet, store its index in the variable oldSheet:
+if(document.styleSheets[i].disabled == false) {
+    oldSheet = i;
+}
+As you cycle through, make sure all sheets are disabled:
+document.styleSheets[i].disabled = true;
+If the current sheet has the title of the requested sheet, make it enabled by setting its disabled value to false, and immediately set your variable change to true:
+if(document.styleSheets[i].title == mySheet) {
+    document.styleSheets[i].disabled = false;
+    change = true;
+}
+When you’ve cycled through all sheets, you can determine from the state of the variables change and oldSheet whether you are in a position to change the stylesheet. If not, reset the prior stylesheet to be enabled again:</p>
+<p>if(!change) document.styleSheets[oldSheet].disabled = false;</p>
+<p>Finally, the function returns the value of variable change—true if the change has been made, or false if not.</p>
+<p>The code is listed in Listing 12.4. Save this code in an HTML file and load it into your browser.</p>
+<p>LISTING 12.4 Selecting Stylesheets by Title</p>
+<p>The small function sheet() is added to the button’s onClick event handler when the page loads. Each time the button is clicked, sheet() prompts the user for the name of a stylesheet:</p>
+<p>var sheetName = prompt("Stylesheet Name?");</p>
+<p>Then it calls the ssEnable() function, passing the requested name as an argument.</p>
+<p>If the function returns false, indicating that no change of stylesheet has taken place, you alert the user with a message:</p>
+<p>if(!ssEnable(sheetName)) alert("Not found - original stylesheet retained.");</p>
+<p>The script is shown operating in Figure 12.4.</p>
+<p>Image
+FIGURE 12.4 Selecting a new stylesheet by name</p>
+<p>Summary
+In this hour you learned a number of ways in which JavaScript can be put to work on the CSS styles of your page. You learned how to use the style property of page elements, how to work with CSS classes, and how to manipulate entire stylesheets.</p>
+<p>Q&amp;A
+Q. Is it possible for JavaScript to work with individual CSS style rules?</p>
+<p>A. Yes it is, but at the time of writing this does not work very well cross-browser. Mozilla browsers support the cssRules array, while Internet Explorer calls the equivalent array Rules. There is also considerable difference among browsers in how the notion of a “rule” is interpreted. It’s to be hoped that future browser versions will resolve these differences.</p>
+<p>Q. Is it possible to alter the mouse cursor in JavaScript?</p>
+<p>A. Yes, it is. The style object has a property called cursor that can take various values. Popular cursors include the following:</p>
+<p>Crosshair—Pointer renders as a pair of crossed lines like a gun sight.
+Pointer—Usually a pointing finger.
+Text—Text entry caret.
+Wait—The program is busy.
+Quiz
+Let's get started!</p>
+<p>Exercises
+Edit the program of Listing 12.1 to change other style properties such as font face and decoration, element borders, padding, and margins.
+Change the program of Listing 12.4 so that some of the stylesheets are externally linked, rather than situated between <style> and </style> tags in the page . Does everything work the same?</p></body>
+</html>
